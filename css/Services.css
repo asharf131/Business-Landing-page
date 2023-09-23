@@ -1,0 +1,166 @@
+.ourServices .container {
+    text-align: center;
+}
+
+.ourServices .container .text p {
+    font-size: 20px;
+
+}
+
+.ourServices .container .text h3 {
+    padding-top: 10px;
+    font-size: 40px;
+
+}
+
+.ourServices .container .Services {
+
+    width: 80%;
+    margin: 0 auto;
+    background: #956AE1;
+    display: flex;
+    border: 1px solid #C4A3FD;
+    padding: 20px 0;
+    border-radius: 50px;
+    margin-top: 50px;
+    box-shadow: 0 0 25px #bfc8d166;
+}
+
+
+.ourServices .container .Services .ser {
+    flex-grow: 1;
+    text-align: center;
+    border-right: 1px solid #dee2e6;
+}
+
+.ourServices .container .Services .ser h2 {
+    letter-spacing: 4px;
+    font-size: 60px;
+}
+
+.ourServices .container .Services .ser p {
+    font-size: 22px;
+}
+
+.ourServices .container .Services .ser:nth-child(3) {
+    border-right: 1px solid transparent;
+}
+
+
+/* ---------------------- */
+
+.exServices .container {
+    text-align: center;
+}
+
+.exServices .container .text {
+    margin-bottom: 30px;
+}
+
+.exServices .container .boxes {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.exServices .container .boxes .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px;
+    width: 540px;
+    height: 200px;
+    flex-grow: 1;
+    border-radius: 15px;
+    background-color: #B28AF8;
+    position: relative;
+}
+
+.exServices .container .boxes .box .content {
+    text-align: start;
+    width: 75%;
+
+}
+
+.exServices .container .boxes .box  img{
+height: 70%;
+}
+
+.exServices .container .boxes .box .content h3 {
+    padding-bottom: 15px;
+    font-size: 20px;
+}
+.exServices .container .boxes .box .content .p {
+line-height: 30px;
+}
+.exServices .container .boxes .box .content .plus {
+position: absolute;
+bottom: 0;
+right: 0;
+}
+
+
+@media(max-width: 1032px) {
+  /* responsive Services start */
+  .ourServices .container .Services {
+    flex-direction: column;
+   }
+
+   .ourServices .container .Services .ser {
+    border-right: 0px solid #dee2e6;
+    padding: 20px 0;
+
+   }
+   .ourServices .container .Services .ser p{
+    font-size: 14px;
+    padding-bottom: 20px;
+    margin: 0 auto;
+    width: 30%;
+    border-bottom: 2px solid #dee2e6;
+    }
+
+    .ourServices .container .Services .ser:nth-child(3) p {
+    border-bottom: 0 solid transparent;
+    }
+  /* responsive Services end */
+
+ /* responsive exServices start */ 
+ .exServices .container .boxes .box {
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    padding: 25px;
+    width: 200px;
+    height: 440px;
+}
+
+.exServices .container .boxes .box .content {
+    width: 100%;
+
+}
+
+.exServices .container .boxes .box .content h3 {
+  padding-top: 50px;
+    
+}
+.exServices .container .boxes .box  img{
+    height: 22%;
+    }
+ /* responsive exServices end */
+
+}
+
+
+ @media (max-width: 890px) {
+    .exServices .container .boxes .box {
+        width: 200px;
+        justify-content: center;
+        flex-grow: 1;
+    }
+    
+    .exServices .container .boxes .box3,    .exServices .container .boxes .box4   {
+     display: none;
+    }
+
+}

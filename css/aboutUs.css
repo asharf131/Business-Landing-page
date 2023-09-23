@@ -1,0 +1,107 @@
+.AboutUs {
+    margin-top: 50px;
+}
+.AboutUs .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+}
+.AboutUs .container img{
+    width: 45%;
+}
+.AboutUs .container .textContent{
+    position: relative;
+    width: 45%;
+}
+.AboutUs .container .textContent h2{
+    font-size: 30px;
+word-spacing: 4px;
+}
+.AboutUs .container .textContent h2::before{
+content: "________ ";
+letter-spacing: -7px;
+font-weight: 100;
+position: absolute;
+left: -30%;
+top: -2%;
+
+}
+.AboutUs .container .textContent p{
+    font-family: 'Roboto', sans-serif;
+}
+.AboutUs .container .textContent p:nth-of-type(1){
+    font-size: 22px;
+}
+.AboutUs .container .textContent p:nth-of-type(2){
+    font-size: 16px;
+    word-spacing: 2px;
+line-height: 1.5;
+}
+.AboutUs .container .textContent div{
+    width: 100%;
+}
+.AboutUs .container .textContent div button{
+    width: 240px;
+    height: 60px;
+    text-align: center;
+    color: #B28AF8;
+    border: 0;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.AboutUs .container .textContent div button:hover{
+    background-color: #B28AF8;
+    color: #fff;
+
+}
+
+
+
+    /* sm medium */
+@media (max-width: 992px) {
+
+    /* responsive AboutUs start */
+
+    .AboutUs .container {
+        flex-direction: column;
+    }
+
+    .AboutUs .container img,
+    .AboutUs .container .textContent {
+        width: 100%;
+    }
+
+    .AboutUs .container .textContent h2::before {
+        display: none;
+    }
+
+    .AboutUs .container .textContent h2 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .AboutUs .container .textContent p:nth-of-type(1) {
+        font-size: 18px;
+    }
+
+    .AboutUs .container .textContent div {
+        text-align: center;
+    }
+
+
+}
+
+
+
+/* lg xl */
+@media (min-width: 992px) and (max-width: 1400px) {
+
+    .AboutUs .container .textContent h2::before {
+        display: none;
+    }
+
+
+}

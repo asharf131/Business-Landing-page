@@ -1,0 +1,79 @@
+
+
+.Portfolio .container {
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+.Portfolio .smallball {
+    width: 170px;
+    height: 170px;
+    position: absolute;
+    top: 0px;
+    left: -29px;
+}
+.Portfolio .container .cards{
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+text-align: center;
+width: 95%;
+margin: auto;
+gap: 20px;
+}
+.Portfolio .container .cards .card {
+    background-color: #B28AF8;
+    border-radius: 15px;
+    height: 380px;
+
+}
+.Portfolio .container .cards .card .image{
+    width: 320px;
+    height: 242px;
+    border-radius: 15px;
+    text-align: center;
+}
+.Portfolio .container .cards .card .image img{
+    width: 300px;
+    height: 242px;
+    padding: 30px;
+}
+.Portfolio .container .cards .card .image1{
+    background-color: #E2FEF0;
+}
+.Portfolio .container .cards .card .image2{
+    background-color: #AACBFC;
+}
+.Portfolio .container .cards .card .image3{
+    background-color: #FFC7E1;
+}
+.Portfolio .container .cards .card .image4{
+    background-color: #FCFFCE ;
+}
+.Portfolio .container .cards .card  .content{
+    padding-top: 40px;
+}
+
+.Portfolio .container .cards .card  .content h4{
+    font-size: 20px;
+ padding-bottom: 10px;
+}
+
+.chevrons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 30px;
+}
+@media (max-width: 992px) {
+    .Portfolio .container .cards{
+      overflow: hidden;
+    }
+
+    .Portfolio .smallball {
+        top: 4%;
+    left: -22%;
+    }
+ 
+}

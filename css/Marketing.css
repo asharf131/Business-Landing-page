@@ -1,0 +1,72 @@
+.Marketing {
+margin-top: 50px;
+text-align: center;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.Marketing .container .text{
+margin-bottom: 40px;
+}
+.Marketing .container .text p{
+font-family: 'Roboto', sans-serif;
+
+}
+
+.chevron{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 14px 0 ;
+    color: #fff;
+    background-color: #B28AF8;
+    cursor: pointer;
+}
+
+.Marketing .container .Companies{
+    display: flex;
+justify-content: center;
+align-items: center;
+gap: 25px;
+}
+
+
+/* sm medium */
+@media (max-width: 992px) {
+
+    /* responsive Marketing start */
+    .Marketing {
+        margin-top: 700px;
+    }
+
+    .Marketing .container .text p {
+        margin-bottom: 10px;
+    }
+
+
+    .Marketing .container .Companies {
+        gap: 20px;
+    }
+
+    /* .Marketing .container .Companies img.show {
+        display: inline-block;
+    }
+    .Marketing .container .Companies img.hide {
+        display: none;
+    } */
+
+    .Marketing .container .Companies :nth-child(4),
+    .Marketing .container .Companies :nth-child(5),
+    .Marketing .container .Companies :nth-child(6) {
+        display: none;
+    }
+
+
+
+    /* responsive Marketing end */
+
+
+}

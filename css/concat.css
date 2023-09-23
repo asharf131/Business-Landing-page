@@ -1,0 +1,163 @@
+.Contact{
+    position: relative;
+}
+.bigimg{
+    width: 484px;
+    height: 597px;
+    position: absolute;
+    left: -10%;
+    top: -20%;
+}
+.Contact .container{
+    padding-bottom: 2px;
+}
+.Contact .container .content{
+ width: 60%;
+ margin: auto;
+ text-align: center;
+
+}
+
+.Contact .container .content h2{
+margin: 30px 0 20px 0;
+font-size: 40px;
+}
+.Contact .container .content p{
+    width: 60%;
+    margin: auto;
+line-height: 1.5;
+}
+
+.Contact .container .content .inp{
+    margin-top: 30px;
+    margin-bottom: 100px;
+    background-color: #C4A3FD;
+    width: 667px;
+    height: 80px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 15px 30px ;
+}
+.Contact .container .content .inp input{
+    color: #fff;
+    background-color: #C4A3FD;
+    border: 0;
+    font-size: 18px;
+}
+.Contact .container .content .inp input::placeholder {
+    color: #fff;
+    font-size: 18px;
+}
+.Contact .container .content .inp button{
+    width: 200px;
+    height: 50px;
+    border-radius: 15px;
+    color: #B28AF8;
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+
+}
+
+.Contact .container .endContent{
+    display: flex;
+    align-items: start;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 50px;
+    border-bottom: #fff solid 1px;
+}
+.Contact .container .endContent .desc {
+     width: 400px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+.Contact .container .endContent .desc p{
+    margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.Contact .container .endContent .COMPANY .Companies{
+   
+    display: flex;
+    justify-content: space-between;
+    gap: 150px;
+
+}
+.Contact .container .endContent .COMPANY ,.Contact .container .endContent  .Contact0 h4 {
+    font-size: 20px;
+}
+.Contact .container .endContent .COMPANY .Companies .compony1 , .COMPANY .Companies .compony2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 200px;
+
+}
+.Contact .container .endContent  .Contact0 .links{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 200px;
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+footer .icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+@media (max-width: 992px) {
+    .Contact .container .content{
+        width: 90%;
+       
+       }
+       .Contact .container .content p{
+        width: 100%;
+    }
+    .Contact .container .content .inp{
+
+        width: 100%;
+        height: 163px;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    
+
+    .Contact .container .content .inp button{
+        width: 295px;
+        height: 60px;
+    }
+    .Contact .container .endContent {
+        gap: 40px;
+    }
+    footer .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .bigimg{
+        width: 256px;
+        height:300px;
+        left: -30%;
+        top: -10%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1400px) {
+    .bigimg{
+        left: -20%;
+        top: -10%;
+    }
+
+}

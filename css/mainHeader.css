@@ -1,0 +1,291 @@
+
+
+main {
+    background-image: url(../img/background.webp);
+    background-repeat: no-repeat;
+    background-position: 900px center;
+    background-size: 800px;
+    height: 115vh;
+    position: relative;
+    overflow: hidden;
+
+
+
+}
+
+
+main .circles .bigC1 {
+    display: inline-block;
+    width: 1542px;
+    height: 1542px;
+    border-radius: 50%;
+    background-image: linear-gradient(to top left, #C19EFF, transparent);
+    position: absolute;
+    right: -41%;
+    top: -90%;
+    z-index: -1;
+
+}
+
+main .circles .bigC2 {
+    display: inline-block;
+    width: 1542px;
+    height: 1542px;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom, #C19EFF, transparent);
+    position: absolute;
+    right: -57%;
+    top: -90%;
+    z-index: -1;
+}
+
+main .circles .smallc1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    right: 62%;
+    bottom: 16%;
+
+}
+/* content header start */
+
+main .container header .logo {
+    display: inline-block;
+}
+
+main .container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container header nav{
+    width: 55%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main .container header nav a{
+    font-size: 20px;
+    transition: 0.5s;
+}
+
+main .container header nav a:hover{
+border-bottom: #fff solid 2px;
+}
+main .container header nav .barIcon{
+    display: none;
+    color: #fff;
+    font-size: 50px;
+}
+
+main .container header button{
+    width: 174px;
+    height: 60px;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 2px solid #fff;
+
+}
+main .container header button:hover{
+    background-color: #C19EFF;
+}
+
+
+/* content header end */
+
+
+/* content main start */
+
+main .content .container {
+    padding: 45px 0 0 140px;
+    width: 50%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+}
+
+main .content .container .con1{
+    font-size: 50px;
+}
+main .content .container .con2{
+    font-size: 80px;
+}
+main .content .container .con3{
+    font-size: 60px;
+}
+main .content .container .con4{
+    width: 60%;
+   text-align: justify;
+   line-height: 1.5;
+}
+main .content .container .Portofolio{
+    margin-top: 20px;
+}
+main .content .container button{
+    color:#B28AF8 ;
+    font-size: 18px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    border-radius: 20px;
+    border: 0;
+    margin-right: 20px;
+}
+main .content .container button:hover{
+background-color: #B28AF8;
+color: #fff;
+}
+main .content .container .Portofolio .play ,main .content .container .faplay{
+    display: inline-block;
+    width: 60px;
+    height: 60px;  
+    border-radius: 50%;
+    background-color: #C4A3FD;
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    padding-top: 17px;
+}
+
+/* content main end */
+
+
+/* sm medium */
+@media (max-width: 992px) {
+
+    /* responsive header start */
+    main .container header .logo {
+        color: #B28AF8;
+    }
+
+    main .container header nav a {
+        display: none;
+    }
+
+    main .container header nav .barIcon {
+        display: block;
+    }
+
+    main .container header nav .barIcon img {
+        width: 75px;
+    }
+
+    main .container header button {
+        display: none;
+    }
+
+    main .container header nav {
+        width: 100%;
+    }
+
+    /* responsive header end */
+
+    /* responsive main start */
+    main {
+        background-position: 20px center;
+        background-size: cover;
+        overflow: visible;
+
+    }
+
+    main .circles .bigC1,
+    main .circles .bigC2,
+    main .circles .smallc1,
+    main .content .container .Portofolio .play {
+        display: none;
+    }
+
+    main .content .container {
+        padding: 20px 20px;
+        padding-top: 145vh;
+        width: 100%;
+        text-align: center;
+        position: relative;
+
+    }
+
+    main .content .container .faplay {
+        display: block;
+        padding: 20px;
+        margin: 10px auto;
+
+    }
+
+    main .content .container .con4 {
+        margin: 10px auto;
+        font-size: 18px;
+    }
+
+    main .content .container .shape {
+        position: absolute;
+        top: 70%;
+        left: -9%;
+    }
+
+
+    /* responsive main end */
+}
+
+
+
+/* lg xl */
+@media (min-width: 992px) and (max-width: 1400px) {
+ /* responsive header start */
+ main .container header nav {
+    width: 70%;
+}
+
+/* responsive header end */
+
+/* to hidden big , small circle */
+main .circles .bigC1,
+main .circles .smallc1 {
+    display: none;
+}
+
+/* responsive main start */
+main {
+    background-position: 600px center;
+
+}
+
+main .content .container {
+    padding: 40px 60px;
+}
+
+main .content .container .con1 {
+    font-size: 40px;
+}
+
+main .content .container .con2 {
+    font-size: 55px;
+}
+
+main .content .container .con3 {
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+main .content .container button {
+    width: 250px;
+}
+
+main .content .container .faplay,
+main .content .container .shape {
+    display: none;
+}
+
+/* responsive main end */
+}
+
+@media (min-width: 1400px) {
+
+    main .content .container .faplay,
+    main .content .container .shape {
+        display: none;
+    }
+}
